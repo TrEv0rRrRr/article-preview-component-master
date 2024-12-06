@@ -1,0 +1,18 @@
+.header-img {
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  max-height: 14rem;
+}
+
+@media screen and (min-width: 894px) {
+  header {
+    width: 100%;
+  }
+
+  .header-img {
+    min-height: 100%;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 15px;
+  }
+}
