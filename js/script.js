@@ -3,11 +3,11 @@ const shareButtonDesk = document.querySelector(".desk");
 const shareButtonMob = document.querySelector(".mob");
 const divProfile = document.querySelector(".div__profile");
 
-let wH = 894;
+let wWLimit = 894;
 
 shareButtonDesk.addEventListener("click", () => {
   const windowWidth = window.innerWidth;
-  if (windowWidth >= wH) {
+  if (windowWidth >= wWLimit) {
     divShare.classList.toggle("hidden");
     divProfile.classList.replace("hidden", "active");
   } else {
@@ -18,7 +18,7 @@ shareButtonDesk.addEventListener("click", () => {
 
 shareButtonMob.addEventListener("click", () => {
   const windowWidth = window.innerWidth;
-  if (windowWidth < wH) {
+  if (windowWidth < wWLimit) {
     divShare.classList.toggle("active");
     divProfile.classList.toggle("active");
   } else {
